@@ -16,11 +16,15 @@ import { CartDrawer } from '@/components/layout/CartDrawer';
 import { QuickViewModal } from '@/components/products/QuickViewModal';
 import { QuoteModal } from '@/components/layout/QuoteModal';
 import { Toast } from '@/components/ui/Toast';
+import { PageLoader } from '@/components/ui/PageLoader';
 import { ShopProvider } from '@/context/ShopContext';
 
 export default function Home() {
   return (
     <ShopProvider>
+      {/* Sleek, Non-Intrusive Page Entrance Loader */}
+      <PageLoader />
+
       <div className="min-h-screen flex flex-col bg-[#F7FAFF] text-[#10244A] selection:bg-[#0866F5] selection:text-white">
         {/* Top Announcement Bar */}
         <AnnouncementBar />
