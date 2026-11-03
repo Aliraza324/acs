@@ -17,6 +17,7 @@ import { QuickViewModal } from '@/components/products/QuickViewModal';
 import { QuoteModal } from '@/components/layout/QuoteModal';
 import { Toast } from '@/components/ui/Toast';
 import { PageLoader } from '@/components/ui/PageLoader';
+import { BackToTop } from '@/components/ui/BackToTop';
 import { ShopProvider } from '@/context/ShopContext';
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
       {/* Sleek, Non-Intrusive Page Entrance Loader */}
       <PageLoader />
 
-      <div className="min-h-screen flex flex-col bg-[#F7FAFF] text-[#10244A] selection:bg-[#0866F5] selection:text-white">
+      <div className="min-h-screen flex flex-col bg-[#F7FAFF] text-[#10244A] selection:bg-[#0866F5] selection:text-white w-full max-w-full overflow-x-hidden relative">
         {/* Top Announcement Bar */}
         <AnnouncementBar />
 
@@ -73,6 +74,7 @@ export default function Home() {
         <QuickViewModal />
         <QuoteModal />
         <Toast />
+        <BackToTop />
       </div>
     </ShopProvider>
   );

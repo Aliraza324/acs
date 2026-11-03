@@ -52,27 +52,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           {/* Left Column: Hero Editorial Copy & CTAs */}
           <div className="lg:col-span-6 space-y-6 sm:space-y-8">
-            {/* Live Trust Eyebrow Pill */}
-            <motion.div
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-[#E3EBF7] shadow-xs"
-            >
-              <div className="flex items-center gap-1.5">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-                </span>
-                <span className="text-xs font-extrabold uppercase tracking-widest text-[#0866F5] font-sora">
-                  YOUR TRUSTED IT PARTNER IN KENYA
-                </span>
-              </div>
-              <span className="text-slate-300">|</span>
-              <span className="text-[11px] font-bold text-[#718096] font-manrope">
-                Est. 2011 • Nairobi
-              </span>
-            </motion.div>
+          
 
             {/* Main Heading with Sora Typography & Word Reveal */}
             <div>
@@ -110,30 +90,29 @@ export function HeroSection() {
             >
               Affordable Computer Services (ACS Kenya) supplies &amp; supports HP, Dell and Lenovo servers, business laptops, high-volume printers and full office IT setups across Nairobi and Kenya. We deliver, install and maintain — so your business keeps running.
             </motion.p>
+           {/* Primary & Secondary Action CTAs */}
+<motion.div
+  initial={{ opacity: 0, y: 16 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.55, delay: 0.48, ease: [0.16, 1, 0.3, 1] }}
+  className="flex w-full min-w-0 flex-nowrap items-center gap-2 sm:gap-4 pt-1"
+>
+  <button
+    onClick={scrollToProducts}
+    className="group flex flex-1 min-w-0 items-center justify-center gap-1.5 sm:gap-2.5 whitespace-nowrap px-3 sm:px-7 py-3.5 bg-[#0866F5] hover:bg-[#1677FF] text-white font-manrope font-bold text-xs sm:text-sm rounded-xl shadow-lg shadow-blue-500/25 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+  >
+    <span>Browse Products</span>
+    <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 transition-transform group-hover:translate-x-1" />
+  </button>
 
-            {/* Primary & Secondary Action CTAs */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.48, ease: [0.16, 1, 0.3, 1] }}
-              className="flex flex-wrap items-center gap-3.5 sm:gap-4 pt-1"
-            >
-              <button
-                onClick={scrollToProducts}
-                className="group px-7 py-3.5 bg-[#0866F5] hover:bg-[#1677FF] text-white font-manrope font-bold text-sm rounded-xl shadow-lg shadow-blue-500/25 transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2.5 cursor-pointer"
-              >
-                <span>Browse Products</span>
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </button>
-
-              <button
-                onClick={() => openQuoteModal()}
-                className="px-7 py-3.5 bg-white hover:bg-[#F7FAFF] text-[#10244A] border-2 border-[#E3EBF7] hover:border-[#0866F5] font-manrope font-bold text-sm rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2 cursor-pointer shadow-xs"
-              >
-                <FileText className="w-4 h-4 text-[#0866F5]" />
-                <span>Request a Quote</span>
-              </button>
-            </motion.div>
+  <button
+    onClick={() => openQuoteModal()}
+    className="flex flex-1 min-w-0 items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap px-3 sm:px-7 py-3.5 bg-white hover:bg-[#F7FAFF] text-[#10244A] border-2 border-[#E3EBF7] hover:border-[#0866F5] font-manrope font-bold text-xs sm:text-sm rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer shadow-xs"
+  >
+    <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[#0866F5]" />
+    <span>Request a Quote</span>
+  </button>
+</motion.div>
 
             {/* Three Pillar Trust Indicators */}
             <motion.div

@@ -1,12 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import {
   Phone,
   Mail,
   MapPin,
-  ArrowUp,
   ShieldCheck,
   Clock,
   CreditCard,
@@ -17,22 +16,8 @@ import { ACSLogo } from '@/components/ui/ACSLogo';
 import { COMPANY_INFO } from '@/data/catalog';
 
 export function Footer() {
-  const [showBackToTop, setShowBackToTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 400);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
-    <footer id="footer-contact" className="bg-[#071B49] text-white pt-20 pb-10 border-t border-blue-900/40 relative font-manrope">
+    <footer id="footer-contact" className="bg-[#071B49] text-white pt-20 pb-10 border-t border-blue-900/40 relative font-manrope overflow-hidden">
       {/* Decorative ambient lighting glow */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#0866F5]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#00D2FF]/5 rounded-full blur-3xl pointer-events-none" />
@@ -266,18 +251,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Floating Back to Top Button */}
-      {showBackToTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 w-11 h-11 rounded-2xl bg-[#0866F5] hover:bg-[#1677FF] text-white flex items-center justify-center shadow-2xl z-40 transition-all hover:scale-110 active:scale-95 cursor-pointer border border-blue-400/40"
-          title="Scroll to Top"
-          aria-label="Back to Top"
-        >
-          <ArrowUp className="w-5 h-5" />
-        </button>
-      )}
     </footer>
   );
 }

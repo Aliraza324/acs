@@ -70,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full antialiased scroll-smooth">
+    <html lang="en" className="h-full antialiased scroll-smooth max-w-full overflow-x-hidden">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -84,7 +84,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col font-manrope text-[#10244A] bg-[#F5F8FF] selection:bg-[#0866F5] selection:text-white antialiased">
+      <body className="min-h-full flex flex-col font-manrope text-[#10244A] bg-[#F5F8FF] selection:bg-[#0866F5] selection:text-white antialiased max-w-full overflow-x-hidden relative">
         {children}
       </body>
     </html>

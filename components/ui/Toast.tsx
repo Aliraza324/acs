@@ -9,7 +9,7 @@ export function Toast() {
   const { toast } = useShop();
 
   return (
-    <div className="fixed bottom-7 right-7 z-50 pointer-events-none font-manrope">
+    <div className="fixed bottom-4 right-4 sm:bottom-7 sm:right-7 max-w-[calc(100vw-2rem)] z-50 pointer-events-none font-manrope">
       <AnimatePresence>
         {toast && (
           <motion.div

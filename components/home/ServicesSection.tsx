@@ -31,7 +31,7 @@ export function ServicesSection() {
   const { openQuoteModal } = useShop();
 
   return (
-    <section id="services-solutions" className="py-20 sm:py-28 bg-white relative border-b border-[#E3EBF7]">
+    <section id="services-solutions" className="py-20 sm:py-28 bg-white relative overflow-hidden border-b border-[#E3EBF7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
