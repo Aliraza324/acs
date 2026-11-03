@@ -42,7 +42,7 @@ export function QuoteModal() {
   return (
     <AnimatePresence>
       {isQuoteModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-6 overflow-y-auto">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -56,7 +56,7 @@ export function QuoteModal() {
             initial={{ opacity: 0, scale: 0.95, y: 15 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 15 }}
-            className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden border border-[#E5ECF7] z-10 font-manrope"
+            className="relative w-full max-w-lg bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-[#E5ECF7] z-10 font-manrope"
           >
             {/* Header */}
             <div className="bg-[#071B49] p-6 text-white flex items-center justify-between relative overflow-hidden">
