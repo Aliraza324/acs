@@ -1,0 +1,111 @@
+mail" placeholder="Your Email" required>
+  <button type="button" onclick="openVerifyModal('newsletterForm')">
+    Subscribe
+  </button>
+</form>
+
+</section>
+
+
+
+  <!-- contact -->
+  <section id="contact" class="section">
+  
+
+      <div style="flex:1; min-width:300px">
+        <div style="background:white;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+          <h3 style="margin-top:0">Send a message</h3>
+        <!-- ===== CONTACT FORM ===== -->
+<form id="contactForm">
+  <input type="hidden" name="form_type" value="contact">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+ <button type="button" onclick="openVerifyModal('contactForm')">
+    Send Message
+  </button>
+</form>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- ===== VERIFICATION MODAL ===== -->
+    <div id="verifyModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.7); justify-content:center; align-items:center; flex-direction:column;">
+  <div style="background:#fff; padding:20px; border-radius:10px; max-width:400px; width:90%; text-align:center;">
+    <h3>Email Verification</h3>
+    <p>Enter the 6-digit code sent to your email:</p>
+    <input type="text" id="user_code" placeholder="Enter code" required>
+    <button id="verifyBtn">Verify & Continue</button>
+    <p style="margin-top:10px;">
+      Didn't get the code? <button id="resendBtn" style="padding:3px 8px;">Resend Code</button>
+    </p>
+    <p id="verifyMessage" style="margin-top:10px; color:red;"></p>
+  </div>
+</div>
+  </section>
+
+  <!-- Case Studies Section -->
+<section id="case-studies" class="section" style="background:#f9fafb; padding:60px 20px;">
+  <h2 style="text-align:center; font-size:28px; font-weight:700; color:#1e3a8a; margin-bottom:30px;">
+    Case Studies & Success Stories
+  </h2>
+
+  <div class="case-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; max-width:1100px; margin:0 auto;">
+    
+    <!-- Case 1 -->
+    <div class="case" style="background:white; border-radius:16px; padding:24px; box-shadow:0 4px 10px rgba(0,0,0,0.05); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+      <h4 style="font-size:18px; color:#1e3a8a; font-weight:600;">Logistics Co. — Server Consolidation</h4>
+      <p style="margin:10px 0 16px; color:#444;">
+        We migrated a growing logistics company to consolidated HP ProLiant servers,
+        boosting performance, minimizing downtime, and cutting power costs.
+      </p>
+      <div class="meta" style="font-size:14px; color:#2563eb; font-weight:500;">
+        Result: <span style="color:#16a34a;">40% lower downtime</span> • Nairobi • 2024
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case" style="background:white; border-radius:16px; padding:24px; box-shadow:0 4px 10px rgba(0,0,0,0.05); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+      <h4 style="font-size:18px; color:#1e3a8a; font-weight:600;">Accounting Firm — Managed Print</h4>
+      <p style="margin:10px 0 16px; color:#444;">
+        Deployed high-performance printers and a managed print contract that reduced
+        cost per page by 32% while improving document security and uptime.
+      </p>
+      <div class="meta" style="font-size:14px; color:#2563eb; font-weight:500;">
+        Result: <span style="color:#16a34a;">Cost savings</span> • Nairobi • 2023
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Optional hover effect -->
+<style>
+  .case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+</style>
+
+
+  
+<style>
+.footer-tab {
+  background-color: #0a1e5e;
+  color: #cfe0ff;
+  padding: 50px 20px 25px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-tab h3, .footer-tab h4 {
+  color: #ffffff;

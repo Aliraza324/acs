@@ -1,0 +1,258 @@
+{
+  "products": [
+    {
+      "id": "acs-prod-1",
+      "title": "Dell PowerEdge Server",
+      "desc": "Reliable and scalable enterprise server solutions for your data center.",
+      "specs": "Intel Xeon Silver, 32GB RAM, 2TB SSD",
+      "priceText": "KSh 294,500",
+      "price": 294500,
+      "rawImg": "dell1.jpeg"
+    },
+    {
+      "id": "acs-prod-2",
+      "title": "HP ProLiant Server",
+      "desc": "Powerful and secure servers built for modern enterprise workloads.",
+      "specs": "Xeon Gold, 64GB RAM, 4TB SSD",
+      "priceText": "KSh 294,500",
+      "price": 294500,
+      "rawImg": "HPSERVER.jpeg"
+    },
+    {
+      "id": "acs-prod-3",
+      "title": "HP ProLiant DL360 Gen11",
+      "desc": "Supports 8 Gigabit PoE Ports, 58W Budget, Fanless.",
+      "specs": "Xeon Gold, 64GB RAM, 4TB SSD",
+      "priceText": "KSh 14,500",
+      "price": 14500,
+      "rawImg": "tp-Link Omada.jpg"
+    },
+    {
+      "id": "acs-prod-4",
+      "title": "HPE ProLiant ML110 G11",
+      "desc": "Support - DDR5 SDRAM - Up to 16 MB Graphic Card - Gigabit Ethernet - 8 x SFF Bay(s) - 1 x 800 W",
+      "specs": "",
+      "priceText": "KSh 197,000",
+      "price": 197000,
+      "rawImg": "HPE ProLiant ML110 G11.jpg"
+    },
+    {
+      "id": "acs-prod-5",
+      "title": "Cisco Nexus 93180YC-FX Switch",
+      "desc": "Xeon Gold, 64GB RAM, 4TB SSD",
+      "specs": "",
+      "priceText": "KSh 683,600",
+      "price": 683600,
+      "rawImg": "Cisco Nexus 93180YC-FX Switch.jpg"
+    },
+    {
+      "id": "acs-prod-6",
+      "title": "New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB",
+      "desc": "supports 3200 MT/s DDR4 UDIMMs, up to 128 GB for memory-intensive workloads.",
+      "specs": "13th gen intel core i5-1335u",
+      "priceText": "KSh 83,100",
+      "price": 83100,
+      "rawImg": "New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB.jpg"
+    },
+    {
+      "id": "acs-prod-7",
+      "title": "HP EliteBook 840 G5",
+      "desc": "Powerful business laptop with 16GB DDR4 RAM and 512GB SSD — designed for performance and portability.",
+      "specs": "Intel® Core™ i7 Processor",
+      "priceText": "KSh 52,000",
+      "price": 52000,
+      "rawImg": "HP EliteBook 840 G5.jpg"
+    },
+    {
+      "id": "acs-prod-8",
+      "title": "Apple MacBook Air M2",
+      "desc": "Ultra-thin and powerful laptop featuring Apple M2 chip, 8GB RAM, and 512GB SSD for superior speed and efficiency.",
+      "specs": "Apple M2 Processor",
+      "priceText": "KSh 225,950",
+      "price": 225950,
+      "rawImg": "Apple MacBook Air M2.jpg"
+    },
+    {
+      "id": "acs-prod-9",
+      "title": "HP Spectre",
+      "desc": "Premium ultra-slim laptop with 16GB RAM and 512GB SSD, powered by Intel® Core™ i7 for exceptional performance and style.",
+      "specs": "Intel® Core™ i7 Processor",
+      "priceText": "KSh 216,500",
+      "price": 216500,
+      "rawImg": "HP Spectre.jpg"
+    },
+    {
+      "id": "acs-prod-10",
+      "title": "HP Laptop Core i5",
+      "desc": "Modern HP laptop featuring 8GB RAM and 512GB SSD — offering fast performance for work, study, and entertainment.",
+      "specs": "Intel® Core™ i5 Processor",
+      "priceText": "KSh 84,500",
+      "price": 84500,
+      "rawImg": "HP Laptop Core i5.jpg"
+    },
+    {
+      "id": "acs-prod-11",
+      "title": "Acer Aspire 5",
+      "desc": "Powerful and sleek laptop featuring 16GB RAM, 512GB SSD, and Intel® Core™ i7 for smooth multitasking and performance.",
+      "specs": "Intel® Core™ i7 Processor",
+      "priceText": "KSh 89,100",
+      "price": 89100,
+      "rawImg": "Acer Aspire 5.jpg"
+    },
+    {
+      "id": "acs-prod-12",
+      "title": "HP Spectre",
+      "desc": "Elegant and high-performance HP Spectre laptop featuring 16GB RAM and 512GB SSD — perfect for professionals and creators.",
+      "specs": "Intel® Core™ i7 Processor",
+      "priceText": "KSh 216,500",
+      "price": 216500,
+      "rawImg": "HP Spectre.jpg"
+    },
+    {
+      "id": "acs-prod-13",
+      "title": "Epson LQ-350",
+      "desc": "Reliable 24-pin dot-matrix printer (C11CC25002) — ideal for multi-part forms, invoices and continuous stationery in busy offices.",
+      "specs": "24-pin | Up to 360×180 dpi | Parallel & USB | High durability",
+      "priceText": "KSh 78,500",
+      "price": 78500,
+      "rawImg": "epson_lq350.jpg"
+    },
+    {
+      "id": "acs-prod-14",
+      "title": "HP Color LaserJet Pro MFP M283fdw",
+      "desc": "High-performance wireless color laser printer — perfect for offices needing fast printing, scanning, copying, and faxing.",
+      "specs": "Color Laser | 21 ppm | Wi-Fi | Auto-Duplex | Touchscreen",
+      "priceText": "KSh 95,000",
+      "price": 95000,
+      "rawImg": "hp_m283fdw.jpg"
+    },
+    {
+      "id": "acs-prod-15",
+      "title": "HP Color LaserJet Pro MFP M479fdn",
+      "desc": "Enterprise-grade color laser multifunction printer — built for speed, security, and high-volume office productivity.",
+      "specs": "Color Laser | 28 ppm | Network Ready | Auto-Duplex | 4.3” Touchscreen",
+      "priceText": "KSh 84, 500",
+      "price": 84500,
+      "rawImg": "hp_m479fdn.jpg"
+    },
+    {
+      "id": "acs-prod-16",
+      "title": "Epson EcoTank L5290",
+      "desc": "Compact Wi-Fi all-in-one ink tank printer — ideal for homes and small businesses needing low-cost, high-volume color printing.",
+      "specs": "Print | Scan | Copy | Fax | Wi-Fi | Ultra-low-cost Ink",
+      "priceText": "KSh 32,500",
+      "price": 32500,
+      "rawImg": "epson_l5290.jpg"
+    },
+    {
+      "id": "acs-prod-17",
+      "title": "Epson LQ-690",
+      "desc": "High-speed 24-pin impact dot matrix printer — ideal for multi-part forms, invoices, and continuous printing in busy offices.",
+      "specs": "24-pin | 529 cps | USB & Parallel | Long Ribbon Life",
+      "priceText": "KSh 75,000",
+      "price": 75000,
+      "rawImg": "epson_lq690.jpg"
+    },
+    {
+      "id": "acs-prod-18",
+      "title": "HP 305A Black Original LaserJet Toner Cartridge",
+      "desc": "High-quality original black toner cartridge for HP LaserJet printers, ensuring sharp, crisp text and reliable performance for home or office printing needs.",
+      "specs": "Toner | Black | Original | High-Quality | LaserJet",
+      "priceText": "KSh 10,500",
+      "price": 10500,
+      "rawImg": "hp_305a_black_toner.jpg"
+    },
+    {
+      "id": "acs-prod-19",
+      "title": "Evolis HighTrust 600 Prints R5F008AA",
+      "desc": "High-quality Evolis ribbon for ID card printers, providing up to 600 prints with consistent color quality and long-lasting durability for professional card printing.",
+      "specs": "Ribbon | Color | 600 Prints | Durable | ID Card Printer",
+      "priceText": "KSh 9,700",
+      "price": 9700,
+      "rawImg": "evolis_hightrust_600_r5f008aa.jpg"
+    },
+    {
+      "id": "acs-prod-20",
+      "title": "HP 78A Black Original LaserJet Toner Cartridge",
+      "desc": "Original black toner cartridge for HP LaserJet printers, providing reliable, high-quality printing with sharp text and consistent output for home and office use.",
+      "specs": "Toner | Black | Original | High-Quality | LaserJet",
+      "priceText": "KSh 8,000",
+      "price": 8000,
+      "rawImg": "hp_78a_black_toner.jpg"
+    },
+    {
+      "id": "acs-prod-21",
+      "title": "HP 35A Black Original LaserJet Toner Cartridge",
+      "desc": "Original black toner cartridge for HP LaserJet printers, delivering crisp, sharp text and consistent performance for home and office printing needs.",
+      "specs": "Toner | Black | Original | High-Quality | LaserJet",
+      "priceText": "KSh 6,100",
+      "price": 6100,
+      "rawImg": "hp_35a_black_toner.jpg"
+    },
+    {
+      "id": "acs-prod-22",
+      "title": "HP 49A Black Original LaserJet Toner Cartridge",
+      "desc": "Original black toner cartridge for HP LaserJet printers, delivering sharp, professional-quality prints with reliable performance for home and office use.",
+      "specs": "Toner | Black | Original | High-Quality | LaserJet",
+      "priceText": "KSh 9,500",
+      "price": 9500,
+      "rawImg": "hp_49a_black_toner.jpg"
+    },
+    {
+      "id": "acs-prod-23",
+      "title": "Epson TM-20III Thermal Printer",
+      "desc": "Compact and reliable thermal receipt printer ideal for retail and hospitality, offering fast printing with USB and network connectivity for efficient point-of-sale operations.",
+      "specs": "Print | Thermal | USB | Network | Compact | POS",
+      "priceText": "KSh 31,000",
+      "price": 31000,
+      "rawImg": "epson_tm_20iii.jpg"
+    },
+    {
+      "id": "acs-prod-24",
+      "title": "HP 85A Black Original LaserJet Toner Cartridge",
+      "desc": "Original black toner cartridge for HP LaserJet printers, providing high-quality, reliable prints with sharp text and consistent output for home or office use.",
+      "specs": "Toner | Black | Original | High-Quality | LaserJet",
+      "priceText": "KSh 6,500",
+      "price": 6500,
+      "rawImg": "hp_85a_black_toner.jpg"
+    },
+    {
+      "id": "acs-prod-25",
+      "title": "HP 80A Black Toner CF280A Original Genuine 400 M401",
+      "desc": "Original HP 80A black toner cartridge, designed for the M401 series, delivering crisp, high-quality prints with reliable performance for office or home use.",
+      "specs": "Toner | Black | Original | High-Quality | LaserJet | M401",
+      "priceText": "KSh 8,000",
+      "price": 8000,
+      "rawImg": "hp_80a_black_toner.jpg"
+    },
+    {
+      "id": "acs-prod-26",
+      "title": "HP ScanJet Pro 2600f1 Scanner",
+      "desc": "High-speed document scanner designed for offices, offering fast duplex scanning, reliable image quality, and versatile connectivity options for efficient workflow management.",
+      "specs": "Scan | Duplex | High-Speed | Reliable | Office | Connectivity",
+      "priceText": "KSh 40,000",
+      "price": 40000,
+      "rawImg": "hp_scanjet_pro_2600f1.jpg"
+    },
+    {
+      "id": "acs-prod-27",
+      "title": "Kyocera ECOSYS MA3500CIFX",
+      "desc": "High-performance color multifunction printer for medium to large offices, offering fast printing, copying, scanning, and duplex functionality with robust network and mobile connectivity.",
+      "specs": "Print | Scan | Copy | Duplex | Network | Color",
+      "priceText": "KSh 193, 000",
+      "price": 193000,
+      "rawImg": "kyocera_ecosys_ma3500cifx.jpg"
+    },
+    {
+      "id": "acs-prod-28",
+      "title": "Epson EpiqVision Flex Co-FH02 Full HD 1080p",
+      "desc": "Portable Full HD 1080p projector designed for home and office entertainment, delivering bright, high-quality images with flexible connectivity options and compact design.",
+      "specs": "Projector | Full HD | 1080p | Portable | Bright | Flexible Connectivity",
+      "priceText": "KSh 84,000",
+      "price": 84000,
+      "rawImg": "epson_epiqvision_flex_co_fh02.jpg"
+    }
+  ],
+  "categories": [],
+  "contactHtml": "<section id=\"contact\" class=\"section\">\r\n  \r\n\r\n      <div style=\"flex:1; min-width:300px\">\r\n        <div style=\"background:white;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.04)\">\r\n          <h3 style=\"margin-top:0\">Send a message</h3>\r\n        <!-- ===== CONTACT FORM ===== -->\r\n<form id=\"contactForm\">\r\n  <input type=\"hidden\" name=\"form_type\" value=\"contact\">\r\n  <input type=\"text\" name=\"name\" placeholder=\"Your Name\" required>\r\n  <input type=\"email\" name=\"email\" placeholder=\"Your Email\" required>\r\n  <textarea name=\"message\" placeholder=\"Message\" required></textarea>\r\n <button type=\"button\" onclick=\"openVerifyModal('contactForm')\">\r\n    Send Message\r\n  </button>\r\n</form>\r\n\r\n\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!-- ===== VERIFICATION MODAL ===== -->\r\n    <div id=\"verifyModal\" style=\"display:none; position:fixed; top:0; left:0; width:100%; height:100%;\r\n      background:rgba(0,0,0,0.7); justify-content:center; align-items:center; flex-direction:column;\">\r\n  <div style=\"background:#fff; padding:20px; border-radius:10px; max-width:400px; width:90%; text-align:center;\">\r\n    <h3>Email Verification</h3>\r\n    <p>Enter the 6-digit code sent to your email:</p>\r\n    <input type=\"text\" id=\"user_code\" placeholder=\"Enter code\" required>\r\n    <button id=\"verifyBtn\">Verify & Continue</button>\r\n    <p style=\"margin-top:10px;\">\r\n      Didn't get the code? <button id=\"resendBtn\" style=\"padding:3px 8px;\">Resend Code</button>\r\n    </p>\r\n    <p id=\"verifyMessage\" style=\"margin-top:10px; color:red;\"></p>\r\n  </div>\r\n</div>\r\n  </section>"
+}

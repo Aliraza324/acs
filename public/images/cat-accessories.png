@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="dellLid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="dellScreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04102C" />
+      <stop offset="40%" stop-color="#0866F5" />
+      <stop offset="100%" stop-color="#1677FF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" rx="20" fill="#F8FAFC" />
+  <ellipse cx="300" cy="350" rx="220" ry="16" fill="#071B49" opacity="0.1" filter="blur(6px)" />
+
+  <path d="M 80 318 L 520 318 L 485 336 L 115 336 Z" fill="#334155" stroke="#1E293B" stroke-width="1" />
+  <rect x="240" y="322" width="120" height="10" rx="2" fill="#475569" />
+
+  <rect x="115" y="60" width="370" height="250" rx="10" fill="#0A0F1D" stroke="#475569" stroke-width="2" />
+  <rect x="125" y="70" width="350" height="225" rx="4" fill="url(#dellScreen)" />
+
+  <!-- Code / Dashboard Graphics on Display -->
+  <text x="145" y="100" font-family="monospace" font-size="11" fill="#38BDF8" font-weight="bold">Dell Latitude 5520 Enterprise</text>
+  <rect x="145" y="115" width="200" height="6" rx="2" fill="#94A3B8" opacity="0.7" />
+  <rect x="145" y="128" width="160" height="6" rx="2" fill="#94A3B8" opacity="0.7" />
+  <rect x="145" y="141" width="220" height="6" rx="2" fill="#94A3B8" opacity="0.7" />
+
+  <rect x="145" y="170" width="150" height="105" rx="6" fill="#000000" opacity="0.3" />
+  <rect x="310" y="170" width="145" height="105" rx="6" fill="#000000" opacity="0.3" />
+
+  <text x="300" y="303" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#38BDF8" letter-spacing="1">DELL</text>
+</svg>

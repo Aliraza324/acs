@@ -1,0 +1,2132 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Affordable Computer Services — Technology Solutions (Nairobi, Kenya)</title>
+  <meta name="description" content="Affordable Computer Services (ACS) — enterprise-grade servers, PCs, laptops, printers and IT solutions in Nairobi, Kenya. Request a quote or buy business-grade hardware." />
+  <meta name="keywords" content="ACS, Affordable Computer Services, servers, HP, Dell, printers, laptops, Nairobi, Kenya" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Affordable Computer Services — ACS" />
+  <meta property="og:description" content="Enterprise-grade servers, PCs, laptops and printers. Nairobi-based IT solutions and procurement." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_KE" />
+  <link rel="icon" href="acsweblogo.jpg" />
+
+  <style>
+    :root{
+      --brand:#2563eb;
+      --brand-dark:#1e40af;
+      --muted:#6b7280;
+      --card-bg:#ffffff;
+      --page-bg:#f9fafb;
+      --container:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background:var(--page-bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* announcement */
+    .announcement{
+      background:var(--brand);
+      color:#fff;
+      text-align:center;
+      padding:8px 12px;
+      font-weight:600;
+      font-size:0.95rem;
+    }
+
+    /* topbar: logo / search / contact */
+    .topbar{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      justify-content:space-between;
+      max-width:var(--container);
+      margin:12px auto;
+      padding:0 16px;
+      width:100%;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .brand img{height:44px; border-radius:6px}
+    .brand .title{font-weight:700; color:#0f172a}
+    .search{
+      flex:1;
+      display:flex;
+      justify-content:center;
+    }
+    .search input{
+      width:70%;
+      max-width:520px;
+      padding:8px 12px;
+      border:1px solid #d1d5db;
+      border-radius:6px 0 0 6px;
+      outline:none;
+    }
+    .search button{
+      padding:9px 14px;
+      border:none;
+      background:var(--brand);
+      color:#fff;
+      border-radius:0 6px 6px 0;
+      cursor:pointer;
+    }
+    .contact-mini{font-size:0.95rem; color:var(--muted)}
+
+    /* nav */
+    header{
+      background:#0b1220;
+      color:#fff;
+    }
+    nav{
+      max-width:var(--container);
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 16px;
+    }
+    .nav-left{display:flex; gap:18px; align-items:center}
+    .nav-left a{color:#fff; text-decoration:none; font-weight:600}
+    .nav-right{display:flex; gap:10px; align-items:center}
+    .icon-btn{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.12);
+      color:#fff;
+      padding:8px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      font-weight:600;
+    }
+
+    /* hero */
+    .hero{
+      max-width:var(--container);
+      margin:26px auto;
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:32px;
+      padding:20px;
+      align-items:center;
+    }
+    .hero-left h1{
+      margin:0 0 12px 0;
+      font-size:2.1rem;
+      color:#0b1220;
+    }
+    .hero-left p{color:var(--muted); margin:0 0 18px 0; max-width:60ch; line-height:1.5}
+    .cta-row{display:flex; gap:12px; align-items:center}
+    .btn{
+      background:var(--brand);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+      cursor:pointer;
+      border:none;
+    }
+    .btn.ghost{
+      background:transparent;
+      color:var(--brand);
+      border:2px solid var(--brand);
+      font-weight:700;
+    }
+    .hero-right{
+      background:linear-gradient(180deg,#eef2ff,#fff);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 6px 20px rgba(2,6,23,0.06);
+      text-align:center;
+    }
+    .hero-right img{max-width:100%; border-radius:8px; display:block; margin:0 auto 12px}
+
+    /* quick features */
+    .features{
+      max-width:var(--container);
+      margin:18px auto;
+      display:flex;
+      gap:14px;
+      padding:0 16px;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .feature{
+      background:var(--card-bg);
+      padding:12px 14px;
+      border-radius:10px;
+      flex:1;
+      min-width:180px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    }
+    .feature h4{margin:4px 0 6px; font-size:0.95rem}
+    .feature p{margin:0;color:var(--muted);font-size:0.9rem}
+
+    /* solutions section */
+    .section{max-width:var(--container); margin:28px auto; padding:0 16px}
+    .solutions-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+    }
+    .solution{
+      background:var(--card-bg);
+      padding:14px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    }
+    .solution h3{margin:6px 0; font-size:1rem}
+    .solution p{margin:0;color:var(--muted); font-size:0.9rem}
+    .solution .link{display:inline-block;margin-top:10px;color:var(--brand); font-weight:700; text-decoration:none}
+
+    /* case studies */
+    .case-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px}
+    .case{background:white;padding:14px;border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+    .case h4{margin:0 0 8px}
+    .case p{color:var(--muted); margin:0 0 10px; font-size:0.95rem}
+    .case .meta{font-size:0.85rem;color:#6b7280}
+
+    /* products / compact cards (re-using your server cards) */
+    .products-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .card{
+      position:relative;
+      background:var(--card-bg);
+      border-radius:10px;
+      padding:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.04);
+      overflow:hidden;
+    }
+    .card img{width:100%; height:130px; object-fit:cover; border-radius:8px; margin-bottom:8px}
+    .card h4{margin:6px 0 4px; font-size:1rem}
+    .card p{margin:0 0 8px; color:var(--muted); font-size:0.95rem}
+    .product-bar{display:flex; justify-content:space-between; align-items:center; gap:8px; padding:8px; background:#f3f4f6; border-radius:8px}
+
+    /* small floating cart icon in product card */
+    .card .cart-icon{
+      position:absolute; top:10px; right:10px;
+      width:34px; height:34px; border-radius:50%;
+      background:var(--brand); color:#fff; display:flex;
+      align-items:center; justify-content:center; cursor:pointer; border:none;
+      font-size:16px; opacity:0; transform:scale(.95); transition:opacity .18s,transform .18s;
+    }
+    .card:hover .cart-icon{opacity:1; transform:scale(1)}
+    .cart-badge{
+      position:fixed; right:18px; bottom:18px; z-index:120;
+      background:var(--brand); color:#fff; width:48px;height:48px;border-radius:50%;
+      display:flex; align-items:center; justify-content:center; font-weight:800; box-shadow:0 8px 30px rgba(37,99,235,0.18);
+      cursor:pointer; border:none;
+    }
+
+    /* request-quote panel */
+    .quote-panel{
+      background:white; padding:16px; border-radius:10px; box-shadow:0 6px 25px rgba(0,0,0,0.06)
+    }
+    .form-row{display:flex; gap:10px; flex-wrap:wrap}
+    input, textarea, select{
+      width:100%; padding:10px 12px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.95rem;
+    }
+    textarea{min-height:110px; resize:vertical}
+    .small{font-size:0.9rem;color:var(--muted)}
+<form id="quoteform" action="rfq.php" method="post">
+
+   .footer-tab {
+   background-color: #0a1e5e !important;
+  color: #f1f5f9;
+  padding: 50px 40px 20px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #1e40af;
+  font-family: "Segoe UI", Arial, sans-serif;
+  position: relative;
+}
+
+.footer-tab-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-tab-item h3,
+.footer-tab-item h4 {
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+
+.footer-tab-item p {
+  color: #dbeafe;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-tab-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-tab-item ul li {
+  margin-bottom: 6px;
+}
+
+.footer-tab-item ul li a {
+  color: #c7d2fe;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-tab-item ul li a:hover {
+  color: #60a5fa;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #c7d2fe;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #60a5fa;
+}
+
+.partners span {
+  display: block;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+.partner-logos img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.partner-logos img:hover {
+  opacity: 1;
+}
+
+.footer-tab-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 40px;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 15px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 900px) {
+  .footer-tab-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .partner-logos img {
+    margin: 8px;
+  }
+}
+
+
+
+/* CART STYLES */
+.cart {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 300px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.cart h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.cart-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#close-cart {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#close-cart:hover {
+  background: #dc2626;
+}
+
+/* Floating cart icon */
+.floating-cart {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+  z-index: 9999;
+}
+
+.floating-cart:hover {
+  background: #1e40af;
+}
+
+#cart-count {
+  background: white;
+  color: #2563eb;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+.info-btn {
+  background: var(--brand, #2563eb);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.info-btn:hover {
+  background: #1e3a8a;
+}
+
+/* Featured Products Heading */
+#products h2 {
+  font-size: 2.2em;      /* Increase size */
+  font-weight: 700;      /* Make it bold */
+  color: #0a1e5e;        /* Dark blue color, adjust if needed */
+  margin-bottom: 20px;   /* Space below heading */
+  text-align: center;    /* Centered heading */
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- announcement -->
+  <div class="announcement">🌍 Affordable Computer Services — Enterprise hardware & IT solutions in Nairobi, Kenya • Call: +254 702-711622</div>
+
+  <!-- top bar (logo / search / contact) -->
+  <div class="topbar">
+    <div class="brand">
+      <img src="acsweblogo.jpg" alt="ACS Logo">
+      <div>
+        <div class="title">Affordable Computer Services (ACS)</div>
+        <div class="small" style="color:var(--muted); font-size:0.9rem">Nairobi, Kenya</div>
+      </div>
+    </div>
+
+  <!-- Search Section -->
+<div class="search">
+  <input id="siteSearch" type="text" placeholder="Search products...">
+  <button type="button">Search</button>
+</div>
+
+<!-- No results message -->
+<p id="noResults" style="display:none; color:red; margin-top:10px;">No results found.</p>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("siteSearch");
+  const button = document.querySelector(".search button");
+  const cards = document.querySelectorAll(".card");
+  const noResults = document.getElementById("noResults");
+
+  function liveSearch() {
+    const query = input.value.toLowerCase().trim();
+    let anyVisible = false;
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(query) && query !== "") {
+        card.style.display = "";
+        anyVisible = true;
+
+        // Highlight matched text
+        const regex = new RegExp(`(${query})`, "gi");
+        card.innerHTML = card.textContent.replace(regex, '<span style="background-color: yellow;">$1</span>');
+      } else if (query === "") {
+        card.style.display = "";
+        card.innerHTML = card.textContent; // remove highlights
+        anyVisible = true;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    noResults.style.display = anyVisible ? "none" : "block";
+  }
+
+  // Search as you type
+  input.addEventListener("keyup", (e) => {
+    liveSearch();
+    if (e.key === "Enter") liveSearch();
+  });
+
+  // Search on button click
+  button.addEventListener("click", liveSearch);
+});
+</script>
+
+
+
+
+
+
+
+    <div class="contact-mini">
+      <div><strong>Email:</strong> <a href="mailto:sales@acskenya.com">sales@acskenya.com</a></div>
+      <div style="margin-top:4px"><strong>Phone:</strong> <a href="tel:+254702711622">+254 702 711 622</a></div>
+    </div>
+  </div>
+
+  <!-- primary nav -->
+  <header>
+    <nav>
+      <div class="nav-left">
+        <a href="#home">Home</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#products">Products</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a> |||
+        <a href="careers.php">Careers</a> |||
+		<a href="cart.php" class="cart-link">🛒 View Cart</a>
+
+     
+        
+      
+      
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" onclick="location.href='#quote'">Request a Quote</button>
+        <button class="icon-btn" onclick="location.href='#contact'">Get in Touch</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <main id="home" class="hero">
+    <div class="hero-left">
+      <h1>Empowering Businesses with Technology</h1>
+      <p>Affordable Computer Services (ACS) supplies & supports HP, Dell and Lenovo servers, business laptops, high-volume printers and full office IT setups across Nairobi and Kenya. We deliver, install and maintain — so your business keeps running.</p>
+      <div class="cta-row" style="margin-top:14px">
+        <button class="btn" onclick="location.href='#quote'">Request a Quote</button>
+        <button class="btn ghost" onclick="location.href='#products'">Browse Products</button>
+      </div>
+      
+      
+
+      <!-- quick features -->
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap">
+        <div style="background:#fff;padding:10px;border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+          <strong>Free Delivery</strong><div class="small">Nairobi wide</div>
+        </div>
+        <div style="background:#fff;padding:10px;border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+          <strong>Warranty & Support</strong><div class="small">6-12 months</div>
+        </div>
+        <div style="background:#fff;padding:10px;border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+          <strong>On-site Service</strong><div class="small">Install & setup</div>
+        </div>
+      </div>
+    </div>
+     </div>
+
+    
+	
+<!-- Additional Promo Image (below hero-right) -->
+<div class="hero-right" style="margin-top:20px; max-width:420px;">
+  <img 
+    src="promo.jpg" 
+    alt="Promotional Image"
+    style="
+      width:100%;
+      border-radius:10px;
+      opacity:0.96;
+      box-shadow:0 2px 8px rgba(0,0,0,0.06);
+    "
+  >
+</div>
+<div class="hero-right">
+  <img 
+    src="Pricelist.jpeg" 
+    alt="Hero image" 
+    class="hero-image-small"
+  >
+  
+  <div class="hero-offer">
+    <strong>Special Offer:</strong>
+    <p class="small" style="margin:6px 0 0">
+      Weekend discounts on selected servers & printers. 
+      
+      <a href="uploads/ACS PRICELIST -AIT.xlsx" download style="color:var(--brand); font-weight:700">
+  Download Our Latest Price List 
+</a>
+    </p>
+  </div>
+  
+</div>
+
+    </div>
+
+
+	
+	
+  </main>
+
+  
+  <!-- Solutions -->
+<section id="solutions" class="section" style="padding:50px 20px;">
+  <h2 style="text-align:center; font-size:2.2rem; color:#1e3a8a; font-weight:700; letter-spacing:1px;">
+    QUICK CATEGORIES
+  </h2>
+
+  <div class="solutions-grid" style="margin-top:30px; display:grid; gap:25px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));">
+
+    <!-- Servers & Data Center -->
+    <a href="servers.php" style="text-decoration:none; color:inherit;">
+      <div class="solution" style="background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:0.3s;">
+        <h3 style="font-size:1.4rem; color:#1e40af; font-weight:700; margin-bottom:12px;">
+          SERVERS
+        </h3>
+
+        <img src="Servers_classified.jpg" alt="Servers and Data Center"
+             style="width:100%; height:auto; max-height:220px; border-radius:10px; object-fit:cover; margin-bottom:15px;">
+
+        <p style="line-height:1.6; color:#475569; font-size:0.95rem;">
+          Build a powerful and secure IT backbone with enterprise-grade <strong>rack, tower, blade, 
+          and virtual servers</strong>. Designed for hosting applications, storage, and mission-critical 
+          workloads with high reliability and performance.
+        </p>
+      </div>
+    </a>
+
+    <!-- Business PCs & Laptops -->
+    <a href="cpus.php" style="text-decoration:none; color:inherit;">
+      <div class="solution" style="background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:0.3s;">
+        <h3 style="font-size:1.4rem; color:#1e40af; font-weight:700; margin-bottom:12px;">
+          BUSINESS PCs & LAPTOPS
+        </h3>
+
+        <img src="laptops.jpg" alt="Business PCs and Laptops"
+             style="width:100%; height:auto; max-height:220px; border-radius:10px; object-fit:cover; margin-bottom:15px;">
+
+        <p style="line-height:1.6; color:#475569; font-size:0.95rem;">
+          Reliable <strong>business desktops, laptops, and workstations</strong> engineered for speed,
+          security, and productivity—ideal for office workflows, remote work, and intensive professional tasks.
+        </p>
+      </div>
+    </a>
+
+    <!-- Printers & Scanners -->
+    <a href="printers and scanners.php" style="text-decoration:none; color:inherit;">
+      <div class="solution" style="background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:0.3s;">
+        <h3 style="font-size:1.4rem; color:#1e40af; font-weight:700; margin-bottom:12px;">
+          PRINTERS & SCANNERS
+        </h3>
+
+        <img src="printer.jpg" alt="Printers and Scanners"
+             style="width:100%; height:auto; max-height:220px; border-radius:10px; object-fit:cover; margin-bottom:15px;">
+
+        <p style="line-height:1.6; color:#475569; font-size:0.95rem;">
+          High-performance <strong>printers, scanners, and multifunction devices</strong> designed for
+          efficiency, digital workflows, and modern office environments — including advanced 3D printing options.
+        </p>
+      </div>
+    </a>
+	
+	<!-- Accessories -->
+<a href="accessories.php" style="text-decoration:none; color:inherit;">
+  <div class="solution" style="background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:0.3s;">
+    <h3 style="font-size:1.4rem; color:#1e40af; font-weight:700; margin-bottom:12px;">
+      ACCESSORIES
+    </h3>
+
+    <img src="accessories.jpg" alt="Server & PC Accessories"
+         style="width:100%; height:auto; max-height:220px; border-radius:10px; object-fit:cover; margin-bottom:15px;">
+
+    <p style="line-height:1.6; color:#475569; font-size:0.95rem;">
+      Explore essential <strong>server and PC components</strong> including DIMMs, power supplies, and upgrade disks.
+      Enhance performance, reliability, and capacity for your systems with high-quality accessories.
+    </p>
+  </div>
+</a>
+
+<!-- repair services -->
+<a href="repair_services.php" style="text-decoration:none; color:inherit;">
+  <div class="solution" style="background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:0.3s;">
+    <h3 style="font-size:1.4rem; color:#1e40af; font-weight:700; margin-bottom:12px;">
+      REPAIR SERVICES
+    </h3>
+
+    <img src="repair_services.jpg" alt="Computer & Server Repair Services"
+         style="width:100%; height:auto; max-height:220px; border-radius:10px; object-fit:cover; margin-bottom:15px;">
+
+    <p style="line-height:1.6; color:#475569; font-size:0.95rem;">
+      Professional <strong>computer and server repair services</strong> including troubleshooting, hardware replacement,
+      diagnostics, and maintenance. Keep your systems running smoothly and extend their lifespan with expert care.
+    </p>
+  </div>
+</a>
+
+
+  </div>
+</section>
+
+   
+  
+
+<!-- products (compact) -->
+<section id="products" class="section">
+  <h2>Featured Products</h2>
+
+  <div class="products-grid">
+   <!-- Product 1 -->
+<div class="card">
+  <img src="dell1.jpeg" alt="Dell PowerEdge Server">
+  <h4 class="product-name"><a href="dell_server.php" style="text-decoration:none; color:#1e3a8a;">Dell PowerEdge Server</a></h4>
+  <p>Reliable and scalable enterprise server solutions for your data center.</p>
+  <p style="font-size:13px; color:#555;">Intel Xeon Silver, 32GB RAM, 2TB SSD</p>
+  
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 294,500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+          <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+          <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="post" action="cart.php" style="display:inline;">
+      <input type="hidden" name="name" value="Dell PowerEdge Server">
+      <input type="hidden" name="price" value="294500">
+      <input type="hidden" name="img" value="dell1.jpeg">
+      <input type="hidden" name="quantity" class="hidden-qty" value="1">
+	  <input type="hidden" name="add_to_cart" value="1">
+	  <input type="hidden" name="img" value="dell1.jpeg">
+
+      <button type="submit" name="add_to_cart" class="cart-icon">🛒</button>
+    </form>
+
+  </div>
+</div>
+
+   <!-- Product 2 -->
+<div class="card">
+  <img src="HPSERVER.jpeg" alt="HP ProLiant Server">
+  <h4><a href="hp_server.php" style="text-decoration:none; color:#1e3a8a;">HP ProLiant Server</a></h4>
+  <p>Powerful and secure servers built for modern enterprise workloads.</p>
+  <p style="font-size:13px; color:#555;">Xeon Gold, 64GB RAM, 4TB SSD</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 294,500</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+          <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+          <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP ProLiant Server">
+      <input type="hidden" name="price" value="294500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+	   <input type="hidden" name="add_to_cart" value="1">
+	  <input type="hidden" name="img" value="HPSERVER.jpeg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<!-- Product 3 -->
+<div class="card">
+  <img src="tp-Link Omada.jpg" alt="TP-Link Omada TL-SG2210P JetStream 10 Port Gigabit Smart Switch With 8">
+  <h4><a href="tp-Link Omada.php" style="text-decoration:none; color:#1e3a8a;">HP ProLiant DL360 Gen11</a></h4>
+  <p>Supports 8 Gigabit PoE Ports, 58W Budget, Fanless.</p>
+  <p style="font-size:13px; color:#555;">Xeon Gold, 64GB RAM, 4TB SSD</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 14,500</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+          <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+          <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="tp-Link Omada">
+      <input type="hidden" name="price" value="294500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+	   <input type="hidden" name="add_to_cart" value="1">
+	  <input type="hidden" name="img" value="hpserver2.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Product 4 -->
+<div class="card">
+  <img src="HPE ProLiant ML110 G11.jpg" alt="HPE ProLiant ML110 G11 4.5U Tower Server - 1 Xeon Silver 4410Y 2 GHz - 32 GB RAM">
+  <h4><a href="HPE ProLiant ML110 G11.php" style="text-decoration:none; color:#1e3a8a;">HPE ProLiant ML110 G11</a></h4>
+  <p> Support - DDR5 SDRAM - Up to 16 MB Graphic Card - Gigabit Ethernet - 8 x SFF Bay(s) - 1 x 800 W</p>
+  
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 197,000</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+          <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+          <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HPE ProLiant ML110 G11">
+      <input type="hidden" name="price" value="294500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+	   <input type="hidden" name="add_to_cart" value="1">
+	  <input type="hidden" name="img" value="New Dell OptiPlex 7000 7410 All-in-One 16GB Intel Core I7 SSD 512GB.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Product 5 -->
+<div class="card">
+  <img src="Cisco Nexus 93180YC-FX Switch.jpg" alt="Cisco Nexus 93180YC-FX Switch">
+  <h4><a href="Cisco Nexus 93180YC-FX Switch.php" style="text-decoration:none; color:#1e3a8a;">Cisco Nexus 93180YC-FX Switch</a></h4>
+  
+  <p style="font-size:13px; color:#555;">Xeon Gold, 64GB RAM, 4TB SSD</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 683,600</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+          <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+          <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Cisco Nexus 93180YC-FX Switch">
+      <input type="hidden" name="price" value="294500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+	   <input type="hidden" name="add_to_cart" value="1">
+	  <input type="hidden" name="img" value="New Desktop Computer HP 290 G4 All-in-One 8GB Intel Core I7 HDD 512GB.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- Product 25 --> 
+<div class="card">
+  <img src="New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB.jpg" alt="New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB ">
+  <h4><a href="New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB.php" style="text-decoration:none; color:#1e3a8a;">New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB</a></h4>
+  <p>supports 3200 MT/s DDR4 UDIMMs, up to 128 GB for memory-intensive workloads.</p>
+  <p style="font-size:13px; color:#555;">13th gen intel core i5-1335u</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 83,100</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+          <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+          <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB">
+      <input type="hidden" name="price" value=" 83,100">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+	   <input type="hidden" name="add_to_cart" value="1">
+	  <input type="hidden" name="img" value="New Laptop HP Pavilion 14 X360 2-in-1 8GB Intel Core I5 SSD 512GB.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<!-- Product 26 --> 
+<div class="card">
+  <img src="HP EliteBook 840 G5.jpg" alt="HP EliteBook 840 G5">
+  <h4><a href="HP EliteBook 840 G5.php" style="text-decoration:none; color:#1e3a8a;">HP EliteBook 840 G5</a></h4>
+  <p>Powerful business laptop with 16GB DDR4 RAM and 512GB SSD — designed for performance and portability.</p>
+  <p style="font-size:13px; color:#555;">Intel® Core™ i7 Processor</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 52,000</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP EliteBook 840 G5">
+      <input type="hidden" name="price" value="52,000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="HP EliteBook 840 G5.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- Product 27 --> 
+<div class="card">
+  <img src="Apple MacBook Air M2.jpg" alt="Apple MacBook Air M2">
+  <h4><a href="Apple MacBook Air M2.php" style="text-decoration:none; color:#1e3a8a;">Apple MacBook Air M2</a></h4>
+  <p>Ultra-thin and powerful laptop featuring Apple M2 chip, 8GB RAM, and 512GB SSD for superior speed and efficiency.</p>
+  <p style="font-size:13px; color:#555;">Apple M2 Processor</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 225,950</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Apple MacBook Air M2">
+      <input type="hidden" name="price" value="225,950">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="Apple MacBook Air M2.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<!-- Product 28 --> 
+<div class="card">
+  <img src="HP Spectre.jpg" alt="HP Spectre">
+  <h4><a href="HP Spectre.php" style="text-decoration:none; color:#1e3a8a;">HP Spectre</a></h4>
+  <p>Premium ultra-slim laptop with 16GB RAM and 512GB SSD, powered by Intel® Core™ i7 for exceptional performance and style.</p>
+  <p style="font-size:13px; color:#555;">Intel® Core™ i7 Processor</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 216,500</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP Spectre">
+      <input type="hidden" name="price" value="216,500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="HP Spectre.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<!-- Product 29 --> 
+<div class="card">
+  <img src="HP Laptop Core i5.jpg" alt="HP Laptop Core i5">
+  <h4><a href="HP Laptop Core i5.php" style="text-decoration:none; color:#1e3a8a;">HP Laptop Core i5</a></h4>
+  <p>Modern HP laptop featuring 8GB RAM and 512GB SSD — offering fast performance for work, study, and entertainment.</p>
+  <p style="font-size:13px; color:#555;">Intel® Core™ i5 Processor</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 84,500</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP Laptop Core i5">
+      <input type="hidden" name="price" value="84,500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="HP Laptop Core i5.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<!-- Product 30 --> 
+<div class="card">
+  <img src="Acer Aspire 5.jpg" alt="Acer Aspire 5">
+  <h4><a href="Acer Aspire 5.php" style="text-decoration:none; color:#1e3a8a;">Acer Aspire 5</a></h4>
+  <p>Powerful and sleek laptop featuring 16GB RAM, 512GB SSD, and Intel® Core™ i7 for smooth multitasking and performance.</p>
+  <p style="font-size:13px; color:#555;">Intel® Core™ i7 Processor</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;"> KSh 89,100</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Acer Aspire 5">
+      <input type="hidden" name="price" value="89,100">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="Acer Aspire 5.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<!-- Product 31 --> 
+<div class="card">
+  <img src="HP Spectre.jpg" alt="HP Spectre">
+  <h4><a href="HP Spectre.php" style="text-decoration:none; color:#1e3a8a;">HP Spectre</a></h4>
+  <p>Elegant and high-performance HP Spectre laptop featuring 16GB RAM and 512GB SSD — perfect for professionals and creators.</p>
+  <p style="font-size:13px; color:#555;">Intel® Core™ i7 Processor</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 216,500</div>
+
+    <!-- Quantity selector -->
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <!-- Add to Cart Form -->
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP Spectre">
+      <input type="hidden" name="price" value="216,500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="HP Spectre.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+
+ 
+
+<!-- printers and scanners -->
+
+<div class="card">
+  <img src="epson_lq350.jpg" alt="Epson LQ-350 Dot Matrix Printer - C11CC25002">
+  <h4><a href="epson_lq350.php" style="text-decoration:none; color:#1e3a8a;">Epson LQ-350</a></h4>
+  <p>Reliable 24-pin dot-matrix printer (C11CC25002) — ideal for multi-part forms, invoices and continuous stationery in busy offices.</p>
+  <p style="font-size:13px; color:#555;">24-pin | Up to 360×180 dpi | Parallel & USB | High durability</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 78,500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Epson LQ-350 Dot Matrix Printer C11CC25002">
+      <input type="hidden" name="price" value="78500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="epson_lq350.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="hp_m283fdw.jpg" alt="HP Color LaserJet Pro MFP M283fdw Laser Printer">
+  <h4><a href="hp_m283fdw.php" style="text-decoration:none; color:#1e3a8a;">HP Color LaserJet Pro MFP M283fdw</a></h4>
+  <p>High-performance wireless color laser printer — perfect for offices needing fast printing, scanning, copying, and faxing.</p>
+  <p style="font-size:13px; color:#555;">Color Laser | 21 ppm | Wi-Fi | Auto-Duplex | Touchscreen</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 95,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP Color LaserJet Pro MFP M283fdw Laser Printer">
+      <input type="hidden" name="price" value="62000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_m283fdw.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="hp_m479fdn.jpg" alt="HP Color LaserJet Pro MFP M479fdn Printer">
+  <h4><a href="hp_m479fdn.php" style="text-decoration:none; color:#1e3a8a;">HP Color LaserJet Pro MFP M479fdn</a></h4>
+  <p>Enterprise-grade color laser multifunction printer — built for speed, security, and high-volume office productivity.</p>
+  <p style="font-size:13px; color:#555;">Color Laser | 28 ppm | Network Ready | Auto-Duplex | 4.3” Touchscreen</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 84, 500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP Color LaserJet Pro MFP M479fdn Printer">
+      <input type="hidden" name="price" value="84500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_m479fdn.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="epson_l5290.jpg" alt="Epson EcoTank L5290 A4 Wi-Fi All-in-One Ink Tank Printer">
+  <h4><a href="epson_l5290.php" style="text-decoration:none; color:#1e3a8a;">Epson EcoTank L5290</a></h4>
+  <p>Compact Wi-Fi all-in-one ink tank printer — ideal for homes and small businesses needing low-cost, high-volume color printing.</p>
+  <p style="font-size:13px; color:#555;">Print | Scan | Copy | Fax | Wi-Fi | Ultra-low-cost Ink</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 32,500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Epson EcoTank L5290 A4 Wi-Fi All-in-One Ink Tank Printer">
+      <input type="hidden" name="price" value="32500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="epson_l5290.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="epson_lq690.jpg" alt="Epson LQ-690 Impact Dot Matrix Printer">
+  <h4><a href="epson_lq690.php" style="text-decoration:none; color:#1e3a8a;">Epson LQ-690</a></h4>
+  <p>High-speed 24-pin impact dot matrix printer — ideal for multi-part forms, invoices, and continuous printing in busy offices.</p>
+  <p style="font-size:13px; color:#555;">24-pin | 529 cps | USB & Parallel | Long Ribbon Life</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 75,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Epson LQ-690 Impact Dot Matrix Printer">
+      <input type="hidden" name="price" value="75000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="epson_lq690.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="hp_305a_black_toner.jpg" alt="HP 305A Black Original LaserJet Toner Cartridge">
+  <h4>
+    <a href="hp_305a_black_toner.php" style="text-decoration:none; color:#1e3a8a;">
+      HP 305A Black Original LaserJet Toner Cartridge
+    </a>
+  </h4>
+
+  <p>High-quality original black toner cartridge for HP LaserJet printers, ensuring sharp, crisp text and reliable performance for home or office printing needs.</p>
+  <p style="font-size:13px; color:#555;">Toner | Black | Original | High-Quality | LaserJet</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 10,500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP 305A Black Original LaserJet Toner Cartridge">
+      <input type="hidden" name="price" value="10500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_305a_black_toner.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <img src="evolis_hightrust_600_r5f008aa.jpg" alt="Evolis HighTrust 600 Prints R5F008AA">
+  <h4>
+    <a href="evolis_hightrust_600_r5f008aa.php" style="text-decoration:none; color:#1e3a8a;">
+      Evolis HighTrust 600 Prints R5F008AA
+    </a>
+  </h4>
+
+  <p>High-quality Evolis ribbon for ID card printers, providing up to 600 prints with consistent color quality and long-lasting durability for professional card printing.</p>
+  <p style="font-size:13px; color:#555;">Ribbon | Color | 600 Prints | Durable | ID Card Printer</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 9,700</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Evolis HighTrust 600 Prints R5F008AA">
+      <input type="hidden" name="price" value="9700">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="evolis_hightrust_600_r5f008aa.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="hp_78a_black_toner.jpg" alt="HP 78A Black Original LaserJet Toner Cartridge">
+  <h4>
+    <a href="hp_78a_black_toner.php" style="text-decoration:none; color:#1e3a8a;">
+      HP 78A Black Original LaserJet Toner Cartridge
+    </a>
+  </h4>
+
+  <p>Original black toner cartridge for HP LaserJet printers, providing reliable, high-quality printing with sharp text and consistent output for home and office use.</p>
+  <p style="font-size:13px; color:#555;">Toner | Black | Original | High-Quality | LaserJet</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 8,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP 78A Black Original LaserJet Toner Cartridge">
+      <input type="hidden" name="price" value="8000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_78a_black_toner.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <img src="hp_35a_black_toner.jpg" alt="HP 35A Black Original LaserJet Toner Cartridge">
+  <h4>
+    <a href="hp_35a_black_toner.php" style="text-decoration:none; color:#1e3a8a;">
+      HP 35A Black Original LaserJet Toner Cartridge
+    </a>
+  </h4>
+
+  <p>Original black toner cartridge for HP LaserJet printers, delivering crisp, sharp text and consistent performance for home and office printing needs.</p>
+  <p style="font-size:13px; color:#555;">Toner | Black | Original | High-Quality | LaserJet</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 6,100</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP 35A Black Original LaserJet Toner Cartridge">
+      <input type="hidden" name="price" value="6100">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_35a_black_toner.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="hp_49a_black_toner.jpg" alt="HP 49A Black Original LaserJet Toner Cartridge">
+  <h4>
+    <a href="hp_49a_black_toner.php" style="text-decoration:none; color:#1e3a8a;">
+      HP 49A Black Original LaserJet Toner Cartridge
+    </a>
+  </h4>
+
+  <p>Original black toner cartridge for HP LaserJet printers, delivering sharp, professional-quality prints with reliable performance for home and office use.</p>
+  <p style="font-size:13px; color:#555;">Toner | Black | Original | High-Quality | LaserJet</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 9,500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP 49A Black Original LaserJet Toner Cartridge">
+      <input type="hidden" name="price" value="9500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_49a_black_toner.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="epson_tm_20iii.jpg" alt="Epson TM-20III Thermal Printer">
+  <h4>
+    <a href="epson_tm_20iii.php" style="text-decoration:none; color:#1e3a8a;">
+      Epson TM-20III Thermal Printer
+    </a>
+  </h4>
+
+  <p>Compact and reliable thermal receipt printer ideal for retail and hospitality, offering fast printing with USB and network connectivity for efficient point-of-sale operations.</p>
+  <p style="font-size:13px; color:#555;">Print | Thermal | USB | Network | Compact | POS</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 31,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Epson TM-20III Thermal Printer">
+      <input type="hidden" name="price" value="31000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="epson_tm_20iii.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <img src="hp_85a_black_toner.jpg" alt="HP 85A Black Original LaserJet Toner Cartridge">
+  <h4>
+    <a href="hp_85a_black_toner.php" style="text-decoration:none; color:#1e3a8a;">
+      HP 85A Black Original LaserJet Toner Cartridge
+    </a>
+  </h4>
+
+  <p>Original black toner cartridge for HP LaserJet printers, providing high-quality, reliable prints with sharp text and consistent output for home or office use.</p>
+  <p style="font-size:13px; color:#555;">Toner | Black | Original | High-Quality | LaserJet</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 6,500</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP 85A Black Original LaserJet Toner Cartridge">
+      <input type="hidden" name="price" value="6500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_85a_black_toner.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <img src="hp_80a_black_toner.jpg" alt="HP 80A Black Toner CF280A Original Genuine 400 M401">
+  <h4>
+    <a href="hp_80a_black_toner.php" style="text-decoration:none; color:#1e3a8a;">
+      HP 80A Black Toner CF280A Original Genuine 400 M401
+    </a>
+  </h4>
+
+  <p>Original HP 80A black toner cartridge, designed for the M401 series, delivering crisp, high-quality prints with reliable performance for office or home use.</p>
+  <p style="font-size:13px; color:#555;">Toner | Black | Original | High-Quality | LaserJet | M401</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 8,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP 80A Black Toner CF280A Original Genuine 400 M401">
+      <input type="hidden" name="price" value="8000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_80a_black_toner.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="hp_scanjet_pro_2600f1.jpg" alt="HP ScanJet Pro 2600f1 Scanner">
+  <h4>
+    <a href="hp_scanjet_pro_2600f1.php" style="text-decoration:none; color:#1e3a8a;">
+      HP ScanJet Pro 2600f1 Scanner
+    </a>
+  </h4>
+
+  <p>High-speed document scanner designed for offices, offering fast duplex scanning, reliable image quality, and versatile connectivity options for efficient workflow management.</p>
+  <p style="font-size:13px; color:#555;">Scan | Duplex | High-Speed | Reliable | Office | Connectivity</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 40,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="HP ScanJet Pro 2600f1 Scanner">
+      <input type="hidden" name="price" value="48500">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="hp_scanjet_pro_2600f1.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <img src="kyocera_ecosys_ma3500cifx.jpg" alt="Kyocera ECOSYS MA3500CIFX Printer">
+  <h4>
+    <a href="kyocera_ecosys_ma3500cifx.php" style="text-decoration:none; color:#1e3a8a;">
+      Kyocera ECOSYS MA3500CIFX
+    </a>
+  </h4>
+
+  <p>High-performance color multifunction printer for medium to large offices, offering fast printing, copying, scanning, and duplex functionality with robust network and mobile connectivity.</p>
+  <p style="font-size:13px; color:#555;">Print | Scan | Copy | Duplex | Network | Color</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 193, 000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Kyocera ECOSYS MA3500CIFX">
+      <input type="hidden" name="price" value="193000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="kyocera_ecosys_ma3500cifx.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="epson_epiqvision_flex_co_fh02.jpg" alt="Epson EpiqVision Flex Co-FH02 Full HD 1080p Projector">
+  <h4>
+    <a href="epson_epiqvision_flex_co_fh02.php" style="text-decoration:none; color:#1e3a8a;">
+      Epson EpiqVision Flex Co-FH02 Full HD 1080p
+    </a>
+  </h4>
+
+  <p>Portable Full HD 1080p projector designed for home and office entertainment, delivering bright, high-quality images with flexible connectivity options and compact design.</p>
+  <p style="font-size:13px; color:#555;">Projector | Full HD | 1080p | Portable | Bright | Flexible Connectivity</p>
+
+  <div class="product-bar">
+    <div class="price" style="font-weight:600; color:#1e3a8a;">KSh 84,000</div>
+
+    <div style="display:flex; align-items:center; gap:6px;">
+      <button class="qty-btn decrease" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">−</button>
+      <input type="text" class="quantity" value="1" readonly style="width:36px; text-align:center; border:1px solid #ccc; border-radius:5px; padding:4px 0;">
+      <button class="qty-btn increase" style="background:#2563eb; color:white; border:none; border-radius:6px; padding:4px 10px; cursor:pointer;">+</button>
+    </div>
+
+    <form method="POST" action="cart.php" style="display:inline-block; margin-left:6px;">
+      <input type="hidden" name="product_name" value="Epson EpiqVision Flex Co-FH02 Full HD 1080p">
+      <input type="hidden" name="price" value="84000">
+      <input type="hidden" name="quantity" class="qty-hidden" value="1">
+      <input type="hidden" name="add_to_cart" value="1">
+      <input type="hidden" name="img" value="epson_epiqvision_flex_co_fh02.jpg">
+      <button type="submit" class="cart-icon" style="cursor:pointer;">🛒</button>
+    </form>
+  </div>
+</div>
+
+
+ </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- REQUEST A QUOTE -->
+<section id="quote" class="section">
+  <h2>Request a Quote</h2>
+  <div class="quote-panel" style="margin-top:12px; max-width:900px;">
+    <!-- ===== QUOTE FORM ===== -->
+<form id="quoteForm">
+  <input type="hidden" name="form_type" value="quote">
+  <input type="text" name="fullname" placeholder="Full Name" required>
+  <input type="text" name="company" placeholder="Company (optional)">
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="phone" placeholder="Phone">
+  <select name="product">
+    <option>HP ProLiant Servers</option>
+    <option>Dell PowerEdge Servers</option>
+    <option>Lenovo ThinkSystem</option>
+    <option>Printers & Managed Print</option>
+    <option>Procurement & Support</option>
+    <option>Custom Build (Rack)</option>
+  </select>
+  <textarea name="message" placeholder="Project details" required></textarea>
+ <button type="button" onclick="openVerifyModal('quoteForm')">
+  Send Request
+</button>
+
+</form>
+  </div>
+</section>
+
+
+
+  <section id="newsletter" class="section">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Stay updated with the latest tech deals and offers.</p>
+<!-- ===== NEWSLETTER FORM ===== -->
+<form id="newsletterForm">
+  <input type="hidden" name="form_type" value="newsletter">
+  <input type="email" name="email" placeholder="Your Email" required>
+  <button type="button" onclick="openVerifyModal('newsletterForm')">
+    Subscribe
+  </button>
+</form>
+
+</section>
+
+
+
+  <!-- contact -->
+  <section id="contact" class="section">
+  
+
+      <div style="flex:1; min-width:300px">
+        <div style="background:white;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+          <h3 style="margin-top:0">Send a message</h3>
+        <!-- ===== CONTACT FORM ===== -->
+<form id="contactForm">
+  <input type="hidden" name="form_type" value="contact">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+ <button type="button" onclick="openVerifyModal('contactForm')">
+    Send Message
+  </button>
+</form>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- ===== VERIFICATION MODAL ===== -->
+    <div id="verifyModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.7); justify-content:center; align-items:center; flex-direction:column;">
+  <div style="background:#fff; padding:20px; border-radius:10px; max-width:400px; width:90%; text-align:center;">
+    <h3>Email Verification</h3>
+    <p>Enter the 6-digit code sent to your email:</p>
+    <input type="text" id="user_code" placeholder="Enter code" required>
+    <button id="verifyBtn">Verify & Continue</button>
+    <p style="margin-top:10px;">
+      Didn't get the code? <button id="resendBtn" style="padding:3px 8px;">Resend Code</button>
+    </p>
+    <p id="verifyMessage" style="margin-top:10px; color:red;"></p>
+  </div>
+</div>
+  </section>
+
+  <!-- Case Studies Section -->
+<section id="case-studies" class="section" style="background:#f9fafb; padding:60px 20px;">
+  <h2 style="text-align:center; font-size:28px; font-weight:700; color:#1e3a8a; margin-bottom:30px;">
+    Case Studies & Success Stories
+  </h2>
+
+  <div class="case-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; max-width:1100px; margin:0 auto;">
+    
+    <!-- Case 1 -->
+    <div class="case" style="background:white; border-radius:16px; padding:24px; box-shadow:0 4px 10px rgba(0,0,0,0.05); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+      <h4 style="font-size:18px; color:#1e3a8a; font-weight:600;">Logistics Co. — Server Consolidation</h4>
+      <p style="margin:10px 0 16px; color:#444;">
+        We migrated a growing logistics company to consolidated HP ProLiant servers,
+        boosting performance, minimizing downtime, and cutting power costs.
+      </p>
+      <div class="meta" style="font-size:14px; color:#2563eb; font-weight:500;">
+        Result: <span style="color:#16a34a;">40% lower downtime</span> • Nairobi • 2024
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case" style="background:white; border-radius:16px; padding:24px; box-shadow:0 4px 10px rgba(0,0,0,0.05); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+      <h4 style="font-size:18px; color:#1e3a8a; font-weight:600;">Accounting Firm — Managed Print</h4>
+      <p style="margin:10px 0 16px; color:#444;">
+        Deployed high-performance printers and a managed print contract that reduced
+        cost per page by 32% while improving document security and uptime.
+      </p>
+      <div class="meta" style="font-size:14px; color:#2563eb; font-weight:500;">
+        Result: <span style="color:#16a34a;">Cost savings</span> • Nairobi • 2023
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Optional hover effect -->
+<style>
+  .case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+</style>
+
+
+  
+<style>
+.footer-tab {
+  background-color: #0a1e5e;
+  color: #cfe0ff;
+  padding: 50px 20px 25px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-tab h3, .footer-tab h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-tab p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.footer-tab a {
+  color: #cfe0ff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.2s ease;
+}
+
+.footer-tab a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.partners img {
+  width: 40px;
+  margin-right: 8px;
+  margin-top: 6px;
+
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #a9c4ff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+}
+</style>
+<!-- footer -->
+ <footer class="footer-tab">
+  <div class="footer-grid">
+    <!-- ABOUT ACS -->
+    <div class="footer-about">
+      <h3>About ACS</h3>
+      <p>
+        Affordable Computer Services (ACS) is a trusted ICT solutions provider based in Nairobi, Kenya.
+        We specialize in enterprise-grade hardware, IT infrastructure, and support services for businesses of all sizes.
+        Our goal is to deliver reliable, scalable, and cost-effective technology that helps organizations grow with confidence.
+      </p>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+      <p><strong>Email:</strong> sales@acskenya.com</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#solutions">Solutions</a>
+      <a href="#products">Products</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="contact.php">Contact Us</a>
+    </div>
+
+    <!-- PARTNERS -->
+    <div>
+      <h4>Trusted Partners</h4>
+      <div class="partners">
+        <img src="hp-logo.jpg" alt="HP">
+        <img src="dell-logo.jpg" alt="Dell">
+        <img src="lenovo-logo.png" alt="Lenovo">
+      </div>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <div>
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="https://www.tiktok.com/@acs_kenya?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+        <a href="https://x.com/ACSKENYA" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/company/106300943" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Affordable Computer Services — All rights reserved.
+  </div>
+</footer>
+
+
+
+
+<script>
+// --- CART SYSTEM --- //
+function addToCart(button) {
+  const card = button.closest(".card");
+  const name = card.querySelector("h4").innerText.trim();
+  const priceText = card.querySelector(".price").innerText.trim();
+  const price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+  const img = card.querySelector("img").src;
+  const quantity = parseInt(card.querySelector(".quantity").value);
+
+  let cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const existingItem = cart.find(item => item.name === name);
+
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cart.push({ name, price, img, quantity });
+  }
+
+  localStorage.setItem("cartItems", JSON.stringify(cart));
+  updateCartBadge();
+  alert(`${name} (${quantity}) added to cart.`);
+}
+
+// --- Update badge --- //
+function updateCartBadge() {
+  const cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const badge = document.getElementById("cartBadge");
+  if (badge) badge.textContent = count;
+}
+
+// --- Quantity control --- //
+document.addEventListener("click", e => {
+  if (e.target.classList.contains("increase")) {
+    const input = e.target.parentElement.querySelector(".quantity");
+    input.value = parseInt(input.value) + 1;
+  } else if (e.target.classList.contains("decrease")) {
+    const input = e.target.parentElement.querySelector(".quantity");
+    if (parseInt(input.value) > 1) input.value = parseInt(input.value) - 1;
+  }
+});
+
+// --- CART PANEL --- //
+document.body.insertAdjacentHTML("beforeend", `
+  <div class="cart" id="cartPanel" style="
+    position:fixed; top:0; right:-400px; width:350px; height:100%; 
+    background:white; box-shadow:-2px 0 10px rgba(0,0,0,0.2);
+    padding:20px; overflow-y:auto; transition:0.4s; z-index:9999;">
+    <h3>Your Cart</h3>
+    <div id="cartItemsContainer"></div>
+    <div class="cart-footer" id="cartFooter"></div>
+    <button id="checkout-btn" style="
+      background:#2563eb; color:#fff; border:none; border-radius:6px; 
+      padding:10px 15px; cursor:pointer; margin-top:10px;">Proceed to Checkout</button>
+    <button id="close-cart" style="
+      background:#ccc; border:none; border-radius:6px; padding:8px 12px; 
+      margin-top:10px; cursor:pointer;">Close Cart</button>
+  </div>
+`);
+
+function openCart() {
+  const cartPanel = document.getElementById("cartPanel");
+  const itemsContainer = document.getElementById("cartItemsContainer");
+  const footer = document.getElementById("cartFooter");
+  const cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  if (cart.length === 0) {
+    itemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    footer.innerHTML = "";
+  } else {
+    let total = 0;
+    itemsContainer.innerHTML = cart.map((item, index) => {
+      total += item.price * item.quantity;
+      return `
+        <div style="display:flex; align-items:center; margin-bottom:10px; gap:10px;">
+          <img src="${item.img}" width="50" height="50" style="border-radius:6px; object-fit:cover;">
+          <div style="flex:1">
+            <strong>${item.name}</strong><br>
+            <small>${item.quantity} × KSh ${item.price.toLocaleString()}</small>
+          </div>
+          <button onclick="removeFromCart(${index})" style="background:#ef4444; border:none; color:#fff; border-radius:6px; padding:4px 8px; cursor:pointer;">✕</button>
+        </div>
+      `;
+    }).join("");
+    footer.innerHTML = `<p><strong>Total: KSh ${total.toLocaleString()}</strong></p>`;
+  }
+
+  cartPanel.style.right = "0";
+}
+
+function closeCart() {
+  document.getElementById("cartPanel").style.right = "-400px";
+}
+
+function removeFromCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+  cart.splice(index, 1);
+  localStorage.setItem("cartItems", JSON.stringify(cart));
+  updateCartBadge();
+  openCart();
+}
+
+// --- Checkout Redirect --- //
+document.addEventListener("click", e => {
+  if (e.target.id === "checkout-btn") {
+    window.location.href = "checkout.html";
+  } else if (e.target.id === "close-cart") {
+    closeCart();
+  }
+});
+
+document.addEventListener("DOMContentLoaded", updateCartBadge);
+</script>
+
+
+
+
+
+
+
+<!-- Other HTML sections above -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const forms = document.querySelectorAll("form");
+
+  forms.forEach(form => {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, { method: "POST", body: formData });
+      const result = await response.text();
+
+      const msg = document.createElement("div");
+      msg.style.marginTop = "10px";
+      msg.style.padding = "10px";
+      msg.style.borderRadius = "6px";
+      msg.style.fontWeight = "bold";
+
+      if (result.includes("success")) {
+        msg.textContent = "✅ Submitted successfully!";
+        msg.style.background = "#d1fae5";
+        msg.style.color = "#065f46";
+        form.reset();
+      } else {
+        msg.textContent = "❌ Failed to send. Try again.";
+        msg.style.background = "#fee2e2";
+        msg.style.color = "#991b1b";
+      }
+
+      form.appendChild(msg);
+      setTimeout(() => msg.remove(), 4000);
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const input = document.getElementById("siteSearch");
+  const button = document.querySelector(".search button");
+
+  function liveSearch() {
+    const query = input.value.toLowerCase().trim();
+    document.querySelectorAll(".card").forEach(card => {
+      card.style.display = card.innerText.toLowerCase().includes(query) ? "" : "none";
+    });
+  }
+
+  input.addEventListener("keyup", liveSearch);
+  button.addEventListener("click", liveSearch);
+});
+</script>
+
+
+
+<script>
+// Keep track of current form
+let currentForm = null;
+
+// --- Open verification popup ---
+function openVerifyModal(formId){
+  currentForm = document.getElementById(formId);
+  const modal = document.getElementById('verifyModal');
+  const msg = document.getElementById('verifyMessage');
+  const userInput = document.getElementById('user_code');
+
+  // Send verification code
+  const formData = new FormData(currentForm);
+  fetch('send-code.php', { method:'POST', body: formData })
+    .then(res => res.text())
+    .then(() => {
+      modal.style.display = 'flex'; // show popup
+      msg.textContent = '';
+      userInput.value = '';
+    })
+    .catch(() => alert('Error sending verification code.'));
+}
+
+// --- Verify code ---
+document.getElementById('verifyBtn').onclick = function(){
+  const code = document.getElementById('user_code').value.trim();
+  const modal = document.getElementById('verifyModal');
+  const msg = document.getElementById('verifyMessage');
+
+  if(code === ''){
+    msg.style.color = 'red';
+    msg.textContent = 'Enter the 6-digit code!';
+    return;
+  }
+
+  fetch('confirm.php', {
+    method: 'POST',
+    headers: { 'Content-Type':'application/x-www-form-urlencoded' },
+    body: 'user_code=' + encodeURIComponent(code)
+  })
+  .then(res => res.json())
+  .then(data => {
+    if(data.status === 'success'){
+      msg.style.color = 'green';
+      msg.textContent = data.message;
+
+      setTimeout(() => {
+        modal.style.display = 'none';  // hide popup
+        currentForm.reset();           // reset form
+      }, 800);
+    } else {
+      msg.style.color = 'red';
+      msg.textContent = data.message;
+    }
+  })
+  .catch(() => {
+    msg.style.color = 'red';
+    msg.textContent = 'Verification error.';
+  });
+};
+
+// --- Resend code ---
+document.getElementById('resendBtn').onclick = function(){
+  if(!currentForm) return;
+  const formData = new FormData(currentForm);
+  fetch('send-code.php', { method:'POST', body: formData })
+    .then(res => res.text())
+    .then(() => {
+      const msg = document.getElementById('verifyMessage');
+      msg.style.color = 'green';
+      msg.textContent = '✅ Verification code resent!';
+      document.getElementById('user_code').value = '';
+    })
+    .catch(() => {
+      const msg = document.getElementById('verifyMessage');
+      msg.style.color = 'red';
+      msg.textContent = 'Error resending code.';
+    });
+};
+</script>
+
+
+
+
+
+
+
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sxb1plzcpnl507713'},{'dcenter':'sxb1'},{'cp_id':'2840625'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+
+
