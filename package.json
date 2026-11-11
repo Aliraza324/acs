@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node init && node scripts/build-css.js && next dev --webpack",
-    "build": "node init && node scripts/build-css.js && next build --webpack",
-    "build:css": "node init && node scripts/build-css.js",
-    "start": "node init && next start",
+    "dev": "node scripts/build-css.js && next dev --webpack",
+    "build": "node scripts/build-css.js && next build --webpack",
+    "build:css": "node scripts/build-css.js",
+    "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
